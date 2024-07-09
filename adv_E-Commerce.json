@@ -126,6 +126,22 @@
         "category" : "casual",
         "price" :"$155",
         "brand" : "Sperry"
+    },
+    {
+        "imgSrc" : "imgs/clasic03.webp",
+        "name" : "Salomon Speedcross 6",
+        "color" : "white",
+        "category" : "casual",
+        "price" :"$155",
+        "brand" : "Sperry"
+    },
+    {
+        "imgSrc" : "imgs/clisic04.jpg",
+        "name" : "Salomon Speedcross 7",
+        "color" : "black",
+        "category" : "casual",
+        "price" :"$155",
+        "brand" : "Sperry"
     }
     
 ]
