@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="adv_E-Commerce.css">
+</head>
+<body>
+
+<section class="main_container">
+
+    <!--     controll_section    -->
+    <div class="controll_section">
+        <div class="cart_logo"><i class='bx bxs-cart'></i></div>
+            
+         <div class="category">
+            <h1>Category</h1>
+            <div class="item">
+                <input data-category="All" id="All" type="radio" name="category" checked>
+                <label data-category="All" for="All">All</label>
+            </div>
+            <div class="item">
+                <input data-category="sneakers" id="Sneakers" type="radio" name="category">
+                <label data-category="sneakers" for="Sneakers">Sneakers</label>
+            </div>
+            <div class="item">
+                <input data-category="casual" id="casual" type="radio" name="category">
+                <label data-category="casual" for="casual">casual</label>
+            </div>
+            <div class="item">
+                <input data-category="slippers" id="slippers" type="radio" name="category">
+                <label data-category="slippers" for="slippers">slippers</label>
+            </div>
+         </div>
+
+        <div class="price">
+            <h1>Price</h1>
+            <div class="item">
+                <input  data_price="ALL_prices" id="ALL_prices" type="radio" name="price" checked>
+                <label for="ALL_prices">All</label>
+            </div>
+            <div class="item">
+                <input data_price="lvl1" id="lvl1" type="radio" name="price">
+                <label for="lvl1">$0-$50</label>
+            </div>
+            <div class="item">
+                <input data_price="lvl2"  id="lvl2" type="radio" name="price">
+                <label for="lvl2">$50-$100</label>
+            </div>
+            <div class="item">
+                <input data_price="lvl3"  id="lvl3" type="radio" name="price">
+                <label for="lvl3">$100-$150</label>
+            </div>    
+            <div class="item">
+                <input  data_price="lvl4" id="lvl4" type="radio" name="price">
+                <label for="lvl4">over $150</label>
+            </div>    
+        </div>
+
+        <div class="colors">
+            <h1>Colors</h1>
+            <div class="item">
+                <input data_color="All_colors" id="All_colors" type="radio" name="color" checked>
+                <label for="All_colors">All colors</label>
+            </div> 
+            <div class="item">
+                <input data_color="black" id="black" type="radio" name="color">
+                <label for="black">Black</label>
+            </div> 
+            <div class="item">
+                <input data_color="white" id="white" type="radio" name="color">
+                <label for="white">White</label>
+            </div> 
+          
+            <div class="item">
+                <input data_color="red" id="red" type="radio" name="color">
+                <label for="red">Red</label>
+            </div> 
+            <div class="item">
+                <input data_color="blue" id="blue" type="radio" name="color">
+                <label for="blue">Blue</label>
+            </div> 
+        </div>
+    </div>
+
+
+    <div class="info_section">
+            <!-- header section  -->
+
+        <header class="header1" >
+            <div class="search_field">
+                <input type="text" class="search" placeholder="Enter your Search Shoes">
+            </div>
+            <div class="cart_prf">
+                <i class='bx bx-heart' ></i>
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-user' ></i>
+            </div>
+        </header>
+         
+        <div class="brand">
+            <h1>Recommended</h1>
+            <div class="brands">
+                <button class="brand_choice" brand_name="All_brands" >All Products</button>
+                <button class="brand_choice" brand_name="Nike" >Nike</button>
+                <button class="brand_choice" brand_name="Adidas" >Adidas</button>
+                <button class="brand_choice" brand_name="Puma" >Puma</button>
+                <button class="brand_choice" brand_name="Sperry" >Sperry</button>
+            </div>
+        </div>
+        <div class="shoes_container">
+  
+            <div class="product_item">
+                <div class="img"><img src="imgs/clasic03.webp" alt="."></div>
+                <div class="item_info">
+                    <h1>Nike Air Monarch IV</h1>
+                    <div class="rate">
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <h4>(123 reviews)</h4>
+                        </div>
+                    </div>
+                    <div class="price_info">
+                        <del><span class="old_price">$200</span></del>
+                        <span class="new_price">$140</span>  
+                    </div>
+                </div>
+                <div class="add_to_cart"><i class='bx bxl-shopify' ></i></div>
+            </div>    
+        </div>
+    </div>
+
+</section>
+<script src="adv_E-Commerce.js" >  </script>
+</body>
+</html>

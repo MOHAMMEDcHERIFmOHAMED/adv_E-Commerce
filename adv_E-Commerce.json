@@ -1,0 +1,131 @@
+[
+    {
+        "imgSrc" : "imgs/nike01.jpg",
+        "name" : "Nike Air Monarch IV",
+        "color" :"white",
+        "category" :"sneakers",
+        "price" :"$70",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/nike02.jpg",
+        "name" : "Adidas Ultraboost 21",
+        "color" : "black",
+        "category" : "sneakers",
+        "price" :"$80",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/nike03.jpg",
+        "name" : "Puma RS-X3",
+        "color" : "blue",
+        "category" : "sneakers",
+        "price" :"$100",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/nike04.jpg",
+        "name" : "Reebok Classic Leather",
+        "color" : "blue",
+        "category" : "sneakers",
+        "price" :"$100",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/adidas01.jpg",
+        "name" : "New Balance 990v5",
+        "color" : "white",
+        "category" : "sneakers",
+        "price" :"$120",
+        "brand" : "Adidas"
+    },
+    {
+        "imgSrc" : "imgs/adidas02.jpg",
+        "name" : "Asics Gel-Kayano 27",
+        "color" : "black",
+        "category" : "sneakers",
+        "price" :"$120",
+        "brand" : "Adidas"
+    },
+    {
+        "imgSrc" : "imgs/adidas03.jpg",
+        "name" : "Under Armour HOVR Phantom 2",
+        "color" : "red",
+        "category" : "sneakers",
+        "price" :"$110",
+        "brand" : "Adidas"
+    },
+    {
+        "imgSrc" : "imgs/puma01.jpg",
+        "name" : "Saucony Jazz Original",
+        "color" : "white",
+        "category" : "sneakers",
+        "price" :"$120",
+        "brand" : "Puma"
+    },
+    {
+        "imgSrc" : "imgs/puma02.jpg",
+        "name" : "Brooks Ghost 13",
+        "color" : "black",
+        "category" : "sneakers",
+        "price" :"$120",
+        "brand" : "Puma"
+    },
+    {
+        "imgSrc" : "imgs/puma03.jpg",
+        "name" : "Mizuno Wave Rider 24",
+        "color" : "red",
+        "category" : "sneakers",
+        "price" :"$100",
+        "brand" : "Puma"
+    },
+    {
+        "imgSrc" : "imgs/slippers01.jpg",
+        "name" : "Skechers D'Lites",
+        "color" : "black",
+        "category" : "slippers",
+        "price" :"$50",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/slippers02.jpg",
+        "name" : "Fila Disruptor II",
+        "color" : "white",
+        "category" : "slippers",
+        "price" :"$66",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/slippers03.jpg",
+        "name" : "Hoka One One Clifton 7",
+        "color" : "blue",
+        "category" : "slippers",
+        "price" :"$45",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/slippers04.jpg",
+        "name" : "Columbia Crestwood",
+        "color" : "blue",
+        "category" : "slippers",
+        "price" :"$120",
+        "brand" : "Nike"
+    },
+    {
+        "imgSrc" : "imgs/clasic01.jpg",
+        "name" : "Merrell Moab 2",
+        "color" : "black",
+        "category" : "casual",
+        "price" :"$200",
+        "brand" : "Sperry"
+    },
+    {
+        "imgSrc" : "imgs/clasic02.jpg",
+        "name" : "Salomon Speedcross 5",
+        "color" : "white",
+        "category" : "casual",
+        "price" :"$155",
+        "brand" : "Sperry"
+    }
+    
+]
