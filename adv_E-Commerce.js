@@ -29,10 +29,6 @@ function show_products(){
     let matchescolor = !choosen_color || product.color === choosen_color ;
     let searchessearch = !search_key || product.name.toUpperCase().includes(search_key) ;
 
-  
-
-
-
         let curr_price = parseInt(product.price.match(/\d+/)[0]);
          if( matchescategory && matchesbrand && matchescolor && searchessearch && curr_price >= min && curr_price <= max ){
             anyResult = true ;
@@ -148,3 +144,6 @@ search_field.addEventListener("keyup" , ()=>{
     search_key = search_field.value.toUpperCase();
     show_products();
 })
+
+
+// ___________ ADD TO CART FUNTIONS ___________
