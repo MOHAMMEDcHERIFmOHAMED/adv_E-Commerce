@@ -95,11 +95,27 @@
             </div>
             <div class="cart_prf">
                 <i class='bx bx-heart' ></i>
-                <i class='bx bx-cart'></i>
+                <button onclick="CartToggler()" type = "button" id = "cart-btn">
+                    <i class='bx bx-cart'></i>
+                  </button>
+                
                 <i class='bx bx-user' ></i>
             </div>
         </header>
-         
+        <div class = "cart hide" >
+            
+            <div class = "cart-container">
+              <div class = "cart-list">
+               
+              </div>
+
+              <div class = "cart-total">
+                <h3>Total: $</h3>
+                <span id = "cart-total-value"></span>
+              </div>
+            </div>
+          </div>
+          
         <div class="brand">
             <h1>Recommended</h1>
             <div class="brands">
@@ -131,7 +147,7 @@
                         <span class="new_price">$140</span>  
                     </div>
                 </div>
-                <div class="add_to_cart"><i class='bx bxl-shopify' ></i></div>
+                <div class="add_to_cart"  ><i class='bx bxl-shopify' ></i></div>
             </div>    
         </div>
     </div>
