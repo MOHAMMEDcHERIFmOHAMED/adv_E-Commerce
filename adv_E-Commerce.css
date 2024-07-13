@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -130,6 +132,63 @@ label{
     position: absolute;
     bottom: 15px;
     right: 15px;
+}
+
+/* chenges added */
+
+.cart{
+    z-index: 1;
+    background-color: antiquewhite;
+    position: fixed;
+    right: 20%;
+    top: 4.5rem;
+    width: 450px ;
+    height: 55%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.cart-item img{
+    height: 70%;
+    width: 100%;
+}
+.cart-item{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+    position: relative;
+    padding: 1.2rem 0.6rem;
+    height: 140px;
+}
+.cart-item-info{
+    display: flex;
+    justify-content: space-around;
+}
+#cart-btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.cart-total{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #e99c2f;
+    color: #fff;
+}
+.hide{
+    display: none;
+}
+
+.cart::-webkit-scrollbar{
+    width: 8px;
+}
+.cart::-webkit-scrollbar-thumb{
+    background: rgba(49, 21, 21, 0.1);
+    border-radius: 15px;
 }
 /* media queries  */
 
