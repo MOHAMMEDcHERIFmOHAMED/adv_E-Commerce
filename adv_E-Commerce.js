@@ -1,6 +1,9 @@
 
 let shoes_container = document.querySelector('.shoes_container');
 let search_field = document.querySelector('.search');
+let cart_btn = document.querySelector('#cart-btn');
+let cart_container = document.querySelector('.cart');
+let cart_list = document.querySelector('.cart-list');
 
 let choosen_category = "sneakers"
                                 , min = 0 , max = 50000 
@@ -29,7 +32,7 @@ function show_products(){
     let matchescolor = !choosen_color || product.color === choosen_color ;
     let searchessearch = !search_key || product.name.toUpperCase().includes(search_key) ;
 
-        let curr_price = parseInt(product.price.match(/\d+/)[0]);
+    let curr_price = parseInt(product.price.match(/\d+/)[0]);
          if( matchescategory && matchesbrand && matchescolor && searchessearch && curr_price >= min && curr_price <= max ){
             anyResult = true ;
             shoes_container.innerHTML +=`
@@ -52,8 +55,8 @@ function show_products(){
                                 <span class="new_price">${product.price}</span>  
                             </div>
                         </div>
-                        <div class="add_to_cart"><i class='bx bxl-shopify' ></i></div>
-                    </div>    `;
+                        <div onclick=" ADDProduct(this)"  class="add_to_cart"><i class='bx bxl-shopify' ></i></div>
+                    </div> `;
          }
   })
   if(!anyResult){
@@ -145,5 +148,33 @@ search_field.addEventListener("keyup" , ()=>{
     show_products();
 })
 
+//  _______________     ADD TO CART FUNCTIONS   ___________________ 
 
-// ___________ ADD TO CART FUNTIONS ___________
+function CartToggler(){ cart_container.classList.toggle('hide'); }
+
+function ADDProduct(elmnt){
+    let parentelmnt = elmnt.parentElement;
+    let imgsrc = (parentelmnt.querySelector(".img img")).getAttribute("src") ;
+    let name = parentelmnt.querySelector(".item_info h1").textContent          ;
+    let price = parentelmnt.querySelector(".price_info  .new_price").textContent    ;
+    console.log(price);
+
+    cart_list.innerHTML += `
+
+        <div class = "cart-item">
+          <img src = "${imgsrc}" alt = "product image">
+          <div class = "cart-item-info">
+            <h3 class = "cart-item-name">${name}</h3>
+            <span class = "cart-item-price">${price}</span>
+          </div>
+           <button onclick="rmProduct(this)" type = "button" class = "cart-item-del-btn">
+                <i class = "fas fa-times"></i> X
+            </button>
+        </div>
+    `;
+}
+
+// let item_id = parseInt(parentelmnt.getAttribute('id').match(/[\d.]+/)[0]);
+// let price = parentelmnt.querySelector(".product-content p").textContent          ;
+// cart_arr.push({item_id , name,category,price,imgsrc});
+// localStorage.setItem("arika" ,JSON.stringify(cart_arr));
